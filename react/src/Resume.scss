@@ -1,0 +1,37 @@
+.resume-container {
+    padding:1rem;
+    h3,h4 {
+        margin: 0;
+    }
+    .workexperience-container {
+        .company {
+            font-style: italic;
+        }
+        .dates {
+            margin-top:0;
+            color: darken(grey, 40%);
+            span {
+                margin-left: 0.2rem;
+            }
+            .duration {
+                font-size:0.9rem;
+            }
+        }
+        ul.duties-list {
+            list-style-type: none;
+            li {
+                margin-top: 1rem;
+            }
+        }
+    }
+    .skills-list {
+        li {
+            &:not(:first-child)::before{ 
+                content: '•';
+                margin-right: 0.5rem;
+            }
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+    }
+}
